@@ -1,0 +1,322 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+    background: #191B1E;
+}
+
+body a {
+    -webkit-transition: 0.5s all;
+    -moz-transition: 0.5s all;
+    -o-transition: 0.5s all;
+    -ms-transition: 0.5s all;
+    transition: 0.5s all;
+    text-decoration: none;
+}
+
+p {
+    margin: 0;
+}
+
+a {
+    color: #196fe5;
+}
+
+h2 {
+    font-size: 16px;
+    font-family: Source Han Sans CN;
+    font-weight: 400;
+    color: #B3B3B3;
+}
+
+ul,
+label {
+    margin: 0;
+    padding: 0;
+}
+
+body a:hover {
+    text-decoration: none;
+}
+
+/*.banner*/
+.banner {
+    z-index: 999;
+    background: linear-gradient(0deg, #1A1B1F 0%, #1A1B1F 100%);
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    -ms-background-size: cover;
+    background-size: cover;
+    min-height: 68px;
+    position: relative;
+    border-bottom: 1px solid #1A1B1F;
+    background-color: rgb(0, 0, 0);
+    max-width: 1920px;
+}
+
+/*.header*/
+.header {
+    width: 100%;
+    height: 68px;
+    background-color: rgba(26, 27, 31, 0.9);
+    position: fixed;
+    border-bottom: 1px solid rgba(239, 249, 253, 0.2);
+    min-width: 1920px;
+}
+
+
+.header .navbar-nav {
+    width: 52%px;
+    display: inline-block;
+}
+
+.nav-img {
+    display: inline-block;
+    width: 384px;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+}
+
+/*-- top-nav --*/
+.header .navbar-nav li {
+    color: #B3B3B3;
+    font-size: 16px;
+    font-family: Source Han Sans CN;
+    float: left;
+    margin-left: 60px;
+    cursor: pointer;
+    line-height: 40px;
+}
+
+.header .navbar-nav-right {
+    display: inline-block;
+    width: 500px;
+    color: #ffffff;
+
+}
+
+.header .navbar-nav-right li {
+    font-size: 16px;
+}
+
+.navbar-right {
+    margin-top: 4px;
+    float: right;
+}
+
+.w3ls-hover:after {
+    -webkit-backface-visibility: hidden;
+    -moz-backface-visibility: hidden;
+    backface-visibility: hidden;
+    border: 1px solid rgba(255, 255, 255, 0);
+    bottom: -10px;
+    content: " ";
+    display: block;
+    margin: 0 auto;
+    position: relative;
+    -webkit-transition: all 280ms ease-in-out;
+    -moz-transition: all 280ms ease-in-out;
+    -o-transition: all 280ms ease-in-out;
+    -ms-transition: all 280ms ease-in-out;
+    transition: all 280ms ease-in-out;
+    width: 0;
+}
+
+.w3ls-hover:hover:after,
+.navbar-default .navbar-nav li {
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    border-color: #196FE5;
+    -webkit-transition: width 350ms ease-in-out;
+    -moz-transition: width 350ms ease-in-out;
+    -o-transition: width 350ms ease-in-out;
+    -ms-transition: width 350ms ease-in-out;
+    transition: width 350ms ease-in-out;
+    width: 100%;
+}
+
+.w3ls-hover h2:hover {
+    color: #fff;
+}
+
+/*-- //top-nav --*/
+/*-- social-icons --*/
+.social-icon a:hover {
+    color: #4588e5;
+    -webkit-transform: scale(1.3);
+    -moz-transform: scale(1.3);
+    -o-transform: scale(1.3);
+    -ms-transform: scale(1.3);
+    transform: scale(1.3);
+}
+
+/*-- //social-icons --*/
+.container {
+
+    padding-right: 80px;
+    padding-left: 80px;
+    margin-top: 15px;
+    display: flex;
+
+}
+
+.clearfix::after {
+    content: "";
+    clear: both;
+    display: block;
+}
+
+
+.contact-us img {
+    max-width: 100%;
+    height: auto;
+}
+
+.server-text {
+    position: absolute;
+    top: 30%;
+    left: 18%;
+}
+
+.server-name {
+    font-family: Source Han Sans CN;
+    font-weight: bold;
+    color: #ffffff;
+}
+
+.server-func {
+    font-family: Source Han Sans CN;
+    font-weight: bold;
+    color: #ffffff;
+    padding-top: 5%;
+    padding-bottom: 5%;
+}
+
+.server-spec {
+    font-family: Source Han Sans CN;
+    font-weight: 400;
+    color: #f2f2f2 !important;
+}
+
+.contact-text {
+    text-align: center;
+    margin: 0 auto;
+    color: #fff;
+    font-size: 32px;
+    /* border: 3px solid green; */
+}
+
+.contact-bg {
+    background-color: #212429;
+}
+
+.contact-text::after {
+    content: '';
+    display: table;
+    clear: both;
+}
+
+.contact-text h1 {
+    padding-top: 60px;
+    padding-bottom: 24px;
+}
+
+.contact-text p {
+    font-size: 14px;
+    font-family: Source Han Sans CN;
+    font-weight: 300;
+    color: #b3b3b3;
+    line-height: 30px;
+}
+
+.example-content {
+    /* background: #b3b3b3; */
+    width: 62.5%;
+    margin: auto;
+}
+
+.example-content img {
+    width: 100%;
+
+}
+
+.contact-info-content {
+    display: flex;
+    /* background-color: aliceblue;     padding-top: 16px;*/
+    width: 62.5%;
+    margin: 0 auto;
+    min-width: 1200px;
+}
+
+.contact-info-content>div>img {
+    width: 100%;
+}
+
+.contact-info-content-left {
+    position: relative;
+}
+
+.contact-info-content-left>div {
+    position: absolute;
+    font-size: 14px;
+    color: rgba(254, 254, 255, 0.7);
+    padding: 20px 40px;
+    font-family: Source Han Sans CN;
+    font-weight: 300;
+    max-height: 538px;
+    text-align: left;
+}
+
+.contact-info-content-left>div>p {
+    /* background: #b3b3b3; */
+    max-height: 538px;
+    overflow: hidden;
+    /* 超出的文本隐藏 */
+    text-overflow: ellipsis;
+    /* 溢出用省略号显示 */
+    display: -webkit-box;
+    /* 将对象作为弹性伸缩盒子模型显示 */
+    -webkit-box-orient: vertical;
+    /* 这个属性不是css的规范属性，需要组合上面两个属性，表示显示的行数 */
+    -webkit-line-clamp: 30;
+    /*  从上到下垂直排列子元素（设置伸缩盒子的子元素排列方式） */
+}
+
+.contact-info-content-left>div>h1 {
+    /*  padding-bottom: 38px;*/
+    font-size: 24px;
+}
+
+.solution-more {
+    position: absolute;
+    bottom: 4em;
+    /* left: 0.1em; */
+
+    vertical-align: middle;
+}
+
+.solution-more>img {
+    width: 40%;
+    padding-right: 2%;
+    vertical-align: middle;
+}
+
+.content-show {
+    background: #191B1E;
+    ;
+}
+
+.scoll-img {
+    height: 680px;
+    overflow: scroll;
+    background-color: #191b1e;
+    margin-top: 16px;
+    margin-bottom: 86px;
+    background-color: rgb(38, 45, 57);
+}

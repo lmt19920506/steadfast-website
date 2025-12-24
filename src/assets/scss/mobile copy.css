@@ -1,0 +1,224 @@
+/* 移动端首页 */
+
+.mobile_home_pingtai {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: #212429;
+}
+
+.mobile_home_pingtai .title {
+    width: 720px;
+    height: 82.77px;
+    font-size: 32px !important;
+    font-family: Source Han Sans CN;
+    font-weight: 500;
+    color: #FFFFFF;
+    text-align: center;
+    margin-top: 30px;
+    background: red;
+}
+
+.mobile_home_pingtai .desc {
+    width: 631px;
+    /* height: 72px; */
+    font-size: 24px;
+    font-family: Source Han Sans CN;
+    font-weight: 300;
+    color: #B3B3B3;
+    /* line-height: 48px; */
+    text-align: center;
+    /* margin-top: 33px; */
+}
+
+.mobile_home_pingtai .mobile_home_pingtai_img {
+    width: 720px;
+    height: 435px;
+    /* background: pink; */
+    background-image: url('../images/shouye-2@2x@2x.png');
+    background-position: center center;
+    background-repeat: no-repeat;
+    /* 当内容高度大于图片高度时，背景图像的位置相对于viewport固定 */
+    /* background-attachment: fixed; */
+    background-size: cover;
+    /* margin-top: 20px; */
+    margin-top: 43.8px;
+}
+
+.mobile_home_pingtai_jiagou {
+    display: flex;
+    background-color: #181A1D;
+    padding: 59px 0;
+}
+
+.mobile_home_pingtai_jiagou .title {
+    font-size: 32px;
+}
+
+.mobile_home_pingtai_jiagou .mobile_jiagou_img_scroll_box {
+    width: 720px;
+    height: 408px;
+    overflow: scroll;
+    background-color: rgb(38, 45, 57);
+    border-radius: 16px;
+    margin-top: 40px;
+}
+
+.mobile_home_pingtai_jiagou .mobile_jiagou_img_scroll_box .mobile_jiagou_img {
+    width: 680px;
+    height: auto;
+    right: 10px;
+    top: 10px;
+}
+
+.mobile_home_pingtai_liangdian {
+    background-color: #212429;
+    padding: 61px;
+}
+
+.mobile_home_pingtai_liangdian .title {
+    font-size: 32px;
+}
+
+.mobile_home_pingtai_liangdian .mobile_home_pingtai_liangdian_desc_img {
+    width: 720px;
+}
+
+.mobile_home_pingtai_liangdian .mobile_home_pingtai_liangdian_desc_box {
+    width: 720px;
+    height: 441px;
+    /* background: pink; */
+    padding: 21px 40px;
+}
+
+.mobile_home_pingtai_liangdian .mobile_home_pingtai_liangdian_desc_box .mobile_home_pingtai_liangdian_desc_title {
+    font-size: 28px;
+    color: #FEFEFF;
+}
+
+.mobile_home_pingtai_liangdian .mobile_home_pingtai_liangdian_desc_box .p {
+    display: flex;
+    margin-top: 31px !important;
+}
+
+.mobile_home_pingtai_liangdian .mobile_home_pingtai_liangdian_desc_box .span_icon {
+    width: 10px;
+    height: 10px;
+    background: #0772FF;
+    display: inline-block;
+}
+
+.mobile_home_pingtai_liangdian .mobile_home_pingtai_liangdian_desc_box .span_icon:nth-child(3) {
+    position: relative !important;
+    bottom: 10px !important;
+}
+
+.mobile_home_pingtai_liangdian .mobile_home_pingtai_liangdian_desc_box .span_desc {
+    font-size: 24px;
+    color: #F2F2F2;
+    width: 627px;
+    /* height: 160px; */
+    /* line-height: 80px; */
+    display: inline-block;
+    margin-left: 21px;
+    opacity: .7;
+}
+
+.mobile_home_pingtai_liangdian_desc_section {
+    margin-top: 31px !important;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+}
+
+.mobile_more_img_box {
+    width: 100%;
+    text-align: right;
+    padding-right: 30px;
+    margin-top: 45px;
+}
+
+.mobile_more_img_box .mobile_more_img {
+    width: 32px !important;
+    height: 19px !important;
+}
+
+/* 解决方案 */
+.mobile_solution {
+    background: #0e1621;
+    /* display: flex;
+    justify-content: center;
+    flex-direction: column; */
+    /* align-items: center; */
+    padding: 60px 0 37px 0;
+}
+
+.mobile_solution .mobile_solution_title {
+    font-size: 32px;
+    text-align: center;
+}
+
+.mobile_solution .mobile_solution_scroll_box {
+    width: 720px;
+    overflow-x: scroll;
+    white-space: nowrap;
+    overflow-x: auto;
+    padding: 15px;
+    /* position: relative;
+    top: 80px; */
+
+}
+
+/* .mobile_solution_box {
+    display: flex;
+} */
+.mobile_solution .mobile_solution_scroll_box .mobile_solution_item {
+    width: 420px;
+    height: 664px;
+    margin-left: 18px;
+    background: #222C3C;
+    display: inline-block;
+}
+
+.solution_item_content_box {
+    display: flex;
+
+}
+
+.mobile_solution .mobile_solution_scroll_box .mobile_solution_item:nth-child(1) {
+    margin-left: 0;
+}
+
+.mobile_solution_item_img {
+    width: 420px;
+    height: 314px;
+}
+.mobile_solution_item_desc_box {
+    width: 420px;
+    padding: 29px;
+    background-color: #222C3C;
+    height: 350px;
+    position: relative;
+}
+.mobile_solution_item_title {
+    /* width: 1121.4px;
+    height: 838.4px; */
+    font-size: 32px;
+    font-weight: 400;
+    color: #FEFEFF;
+    margin-bottom: 24px;
+}
+
+.mobile_solution_item_desc_text {
+    width: 100%;
+    font-size: 24px!important;
+    overflow: hidden;
+    margin-top: 7.5px;
+}
+.mobile_solution_more_icon {
+    width: 46px;
+    height: 46px;
+    /* margin-top: 125.5px; */
+    margin-top: 34px;
+}

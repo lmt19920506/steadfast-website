@@ -1,0 +1,223 @@
+/* 移动端首页 */
+
+.mobile_home_pingtai {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: #212429;
+}
+
+.mobile_home_pingtai .title {
+    width: 1920px;
+    height: 221px;
+    font-size: 85.44px !important;
+    font-family: Source Han Sans CN;
+    font-weight: 500;
+    color: #FFFFFF;
+    text-align: center;
+    margin-top: 80.1px;
+}
+
+.mobile_home_pingtai .desc {
+    width: 1684.77px;
+    /* height: 72px; */
+    font-size: 64.08px;
+    font-family: Source Han Sans CN;
+    font-weight: 300;
+    color: #B3B3B3;
+    /* line-height: 48px; */
+    text-align: center;
+    /* margin-top: 33px; */
+}
+
+.mobile_home_pingtai .mobile_home_pingtai_img {
+    width: 1920px;
+    height: 1161.45px;
+    /* background: pink; */
+    background-image: url('../images/shouye-2@2x@2x.png');
+    background-position: center center;
+    background-repeat: no-repeat;
+    /* 当内容高度大于图片高度时，背景图像的位置相对于viewport固定 */
+    /* background-attachment: fixed; */
+    background-size: cover;
+    /* margin-top: 20px; */
+    margin-top: 117px;
+}
+
+.mobile_home_pingtai_jiagou {
+    display: flex;
+    background-color: #181A1D;
+    padding: 157.53px 0;
+}
+
+.mobile_home_pingtai_jiagou .title {
+    font-size: 85.44px;
+}
+
+.mobile_home_pingtai_jiagou .mobile_jiagou_img_scroll_box {
+    width: 1920px;
+    height: 1089.36px;
+    overflow: scroll;
+    background-color: rgb(38, 45, 57);
+    border-radius: 42.72px;
+    margin-top: 106.8px;
+}
+
+.mobile_home_pingtai_jiagou .mobile_jiagou_img_scroll_box .mobile_jiagou_img {
+    width: 1815.6px;
+    height: auto;
+    right: 26.7px;
+    top: 26.7px;
+}
+
+.mobile_home_pingtai_liangdian {
+    background-color: #212429;
+    padding: 162.87px;
+}
+
+.mobile_home_pingtai_liangdian .title {
+    font-size: 85.44px;
+}
+
+.mobile_home_pingtai_liangdian .mobile_home_pingtai_liangdian_desc_img {
+    width: 1920px;
+}
+
+.mobile_home_pingtai_liangdian .mobile_home_pingtai_liangdian_desc_box {
+    width: 1920px;
+    height: 1177.47px;
+    /* background: pink; */
+    padding: 56.07px 106.8px;
+}
+
+.mobile_home_pingtai_liangdian .mobile_home_pingtai_liangdian_desc_box .mobile_home_pingtai_liangdian_desc_title {
+    font-size: 74.76px;
+    color: #FEFEFF;
+}
+
+.mobile_home_pingtai_liangdian .mobile_home_pingtai_liangdian_desc_box .p {
+    display: flex;
+    margin-top: 82.77px !important;
+}
+
+.mobile_home_pingtai_liangdian .mobile_home_pingtai_liangdian_desc_box .span_icon {
+    width: 26.7px;
+    height: 26.7px;
+    background: #0772FF;
+    display: inline-block;
+}
+
+.mobile_home_pingtai_liangdian .mobile_home_pingtai_liangdian_desc_box .span_icon:nth-child(3) {
+    position: relative !important;
+    bottom: 26.7px !important;
+}
+
+.mobile_home_pingtai_liangdian .mobile_home_pingtai_liangdian_desc_box .span_desc {
+    font-size: 64.08px;
+    color: #F2F2F2;
+    width: 1674.09px;
+    /* height: 160px; */
+    /* line-height: 80px; */
+    display: inline-block;
+    margin-left: 56.07px;
+    opacity: .7;
+}
+
+.mobile_home_pingtai_liangdian_desc_section {
+    margin-top: 82.77px !important;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+}
+
+.mobile_more_img_box {
+    width: 100%;
+    text-align: right;
+    padding-right: 80.1px;
+    margin-top: 120.15px;
+}
+
+.mobile_more_img_box .mobile_more_img {
+    width: 85.44px !important;
+    height: 50.73px !important;
+}
+
+/* 解决方案 */
+.mobile_solution {
+    background: #0e1621;
+    /* display: flex;
+    justify-content: center;
+    flex-direction: column; */
+    /* align-items: center; */
+    padding: 160.2px 0 98.79px 0;
+}
+
+.mobile_solution .mobile_solution_title {
+    font-size: 85.44px;
+    text-align: center;
+}
+
+.mobile_solution .mobile_solution_scroll_box {
+    width: 1920px;
+    overflow-x: scroll;
+    white-space: nowrap;
+    overflow-x: auto;
+    padding: 40.05px;
+    /* position: relative;
+    top: 80px; */
+
+}
+
+/* .mobile_solution_box {
+    display: flex;
+} */
+.mobile_solution .mobile_solution_scroll_box .mobile_solution_item {
+    width: 1121.4px;
+    height: 1772.88px;
+    margin-left: 48.06px;
+    background: #222C3C;
+    display: inline-block;
+}
+
+.solution_item_content_box {
+    display: flex;
+
+}
+
+.mobile_solution .mobile_solution_scroll_box .mobile_solution_item:nth-child(1) {
+    margin-left: 0;
+}
+
+.mobile_solution_item_img {
+    width: 1121.4px;
+    height: 838.38px;
+}
+.mobile_solution_item_desc_box {
+    width: 1121.4px;
+    padding: 77.43px;
+    background-color: #222C3C;
+    height: 934.5px;
+    position: relative;
+}
+.mobile_solution_item_title {
+    /* width: 1121.4px;
+    height: 838.4px; */
+    font-size: 85.44px;
+    font-weight: 400;
+    color: #FEFEFF;
+    margin-bottom: 64.08px;
+}
+
+.mobile_solution_item_desc_text {
+    width: 100%;
+    font-size: 64.08px!important;
+    overflow: hidden;
+    margin-top: 20.025px;
+}
+.mobile_solution_more_icon {
+    width: 122.82px;
+    height: 122.82px;
+    /* margin-top: 125.5px; */
+    margin-top: 90.78px;
+}

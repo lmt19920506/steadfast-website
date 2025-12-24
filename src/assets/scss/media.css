@@ -1,0 +1,38 @@
+@media screen and (max-width: 720px) {
+    .header {
+        display: none!important;
+    }
+    .create_demo_container {
+        display: none!important;
+    }
+    .mobile_header_box {
+        display: block!important;
+        background: #212429!important;
+        /* background: red; */
+    }
+    .mobile_header {
+        /* width: 100%!important; */
+    }
+    .home_banner {
+        display: none!important;
+    }
+    .mobile_home_banner {
+        display: inline-block!important;
+        color: white!important;
+        font-size: 40px!important;
+    }
+    .mobile_menu_modal {
+        /* display: block; */
+    }
+    .pc_container {
+        display: none!important;
+    }
+    .mobile_container {
+        display: block;
+    }
+    .mobile_create_experience_container {
+        display: block!important;
+        /* height: 500px; */
+        /* background: red; */
+    }
+}
