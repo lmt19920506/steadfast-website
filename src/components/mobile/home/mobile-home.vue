@@ -131,7 +131,7 @@ fadeInDown animation {
 .trust-box {
   width: 1920px;
   height: 3732px;
-  background-image: url("../../../assets/images/hero-img.jpg");
+  background-image: url("../../../assets/images/home/hero-img.jpg");
   background-size: cover;
   background-position: cener center;
   background-repeat: no-repeat;

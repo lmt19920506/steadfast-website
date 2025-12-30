@@ -9,10 +9,21 @@
                 With a global network of more than 10000 electronic component suppliers, Steadfast can source a wide range of components for your business needs.Integrated circuits, discrete semiconductors, circuit protection, sensors, connectors, resistors, capacitors, isolators, relays, memory card modules, power boards, radio frequency
             </p>
             <div class="category-menu-box">
-                <div class="category-menu-item" v-for="(item, index) in categoryList" :key="index">{{ item.text }}</div>
+                <div class="category-menu-item" v-for="(item, index) in categoryList" :key="index" @click="goTo(item)">
+                  {{item.text}}
+                  <img class="more-icon" src="../../../assets/images/mobile/mobile_more.png" alt="">
+                </div>
             </div>
         </section>
-        
+        <section class="show-application-industry-container">
+          <p class="title">Application Industry</p>
+          <div class="show-icon-box">
+            <div class="icon-item-box" v-for="(item, index) in iconList" :key="index">
+              <img :src="item.url" alt="">
+              <p>{{ item.name }}</p>
+            </div>
+          </div>
+        </section>
     </div>
 </template>
 
@@ -31,16 +42,48 @@ export default {
       { id: 10, text: "Memory Cards, Modules", anchor: "mcm" },
       { id: 12, text: "RF/IF and RFID", anchor: "rfid" },
     ];
+    this.iconList = [
+      {
+        name: "Artificial Intelligence",
+        url: require("../../../assets/images/ai.jpg"),
+      },
+      { name: "new energy", url: require("../../../assets/images/ne.jpg") },
+      {
+        name: "Industrial Electronics",
+        url: require("../../../assets/images/ie.jpg"),
+      },
+      {
+        name: "Automotive Electronics",
+        url: require("../../../assets/images/ae.jpg"),
+      },
+      {
+        name: "Communication Electronics",
+        url: require("../../../assets/images/ce.jpg"),
+      },
+      {
+        name: "Medical Electronics",
+        url: require("../../../assets/images/me.jpg"),
+      },
+      {
+        name: "Consumer Electronics",
+        url: require("../../../assets/images/ce2.jpg"),
+      },
+      {
+        name: "Internet of Things",
+        url: require("../../../assets/images/it.jpg"),
+      },
+    ];
     return {
       currentShow: 1,
     };
   },
   methods: {
-    viewMoreLightPoint(index) {
-      this.currentShow++;
-      if (this.currentShow === 4) {
-        this.currentShow = 1;
-      }
+    goTo(item) {
+      console.log("go to ===", item);
+      this.$router.push({
+        path: "/product-description",
+        query: { target: item.anchor },
+      });
     },
   },
 };
@@ -59,30 +102,11 @@ export default {
   justify-content: center;
   align-items: center;
   .title {
-    font-size: 90px;
+    font-size: 120px;
     width: 100%;
     // background: pink;
     text-align: center;
   }
-}
-
-.mobile_product_server_banner_banner_title1 {
-  /* width: 257px; */
-  height: 69.42px;
-  font-size: 85.44px;
-  font-family: Source Han Sans CN;
-  font-weight: bold;
-  color: #ffffff;
-}
-
-.mobile_product_server_banner_banner_title2 {
-  /* width: 535px; */
-  height: 104.13px;
-  font-size: 106.8px;
-  font-family: Source Han Sans CN;
-  font-weight: bold;
-  color: #ffffff;
-  margin-top: 80.1px;
 }
 
 .show-category-container {
@@ -97,6 +121,7 @@ export default {
     color: #ffffff;
     text-align: center;
     padding-top: 160.2px;
+    
   }
 
   .product-desc-text {
@@ -125,6 +150,7 @@ export default {
       text-align: center;
       margin-top: 60px;
       border-radius: 30px;
+      position: relative;
       // background: pink;
       &:nth-child(odd) {
         background: #722f8b;
@@ -134,8 +160,58 @@ export default {
         background: #fff;
         color: #722f8b;
       }
+      .more-icon {
+        position: absolute;
+        right: 50px;
+        top: calc(50% - 30px);
+        width: 100px !important;
+        height: 60px !important;
+      }
     }
   }
+}
+.show-application-industry-container {
+  width: 1920px;
+  .title {
+    font-size: 85.44px;
+    font-family: Source Han Sans CN;
+    font-weight: 500;
+    color: #ffffff;
+    text-align: center;
+    padding-top: 160.2px;
+  }
+  .show-icon-box {
+      // width: 450px;
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      padding: 0 60px;
+      margin-top: 50px;
+      .icon-item-box {
+        width: 450px;
+        // margin-left: 30px;
+        // background: pink;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-direction: column;
+        img {
+          width: 360px;
+          height: 360px;
+        }
+        p {
+          text-align: center;
+          justify-content: center;
+          align-items: center;
+          height: 180px;
+          // line-height: 180px;
+          // background: pink;
+          font-size: 60px;
+          margin-top: 20px;
+        }
+      }
+    }
 }
 
 .mobile_product_service_pingtai_operation_process_swiper_img_box {

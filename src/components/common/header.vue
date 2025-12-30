@@ -8,6 +8,7 @@
           alt=""
           @click="goHome"
         />
+        <p class="logo-text">SteadFast</p>
       </div>
       <ul class="center_menu_box navbar-nav">
         <li
@@ -338,13 +339,14 @@ export default {
 };
 </script>
 
-<style scoped>
+<style lang="scss" scoped>
 .header {
   width: 100%;
   height: 68px;
   border-bottom: 1px solid rgba(239, 249, 253, 0.2);
   display: flex;
-  justify-content: space-between;
+  justify-content: cener;
+  align-items: center;
   background: #1a1b1f;
   position: fixed;
   z-index: 999;
@@ -358,14 +360,24 @@ export default {
   height: 68px;
   width: 406px;
   display: flex;
+  justify-content: left;
   align-items: center;
-  padding-left: 40px;
+  padding-left: 20px;
   white-space: nowrap;
+  // background: pink;
+  .logo-text {
+    height: 68px;
+    line-height: 68px;
+  }
+
 }
 
 .header .left_logo_box .logo_img {
-  width: 406px;
-  height: 36px;
+  width: 68px;
+  height: 68px;
+  // background: yellow;
+  position: relative;
+  top: 5px;
 }
 
 .header .left_logo_box .logo_img:hover {

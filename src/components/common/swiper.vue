@@ -9,12 +9,11 @@
         :class="{ fade: index === i }"
       >
         <!-- <div> -->
-        <img v-if="showType === 'default'" :src="item.imgUrl" alt="图片" />
         <div
           v-if="showType === 'homePageBanner'"
           class="home_page_banner_swiper_box"
           :style="{
-            'background-image': `url(${require(`../../assets/images/${item.imgUrl}`)}`,
+            'background-image': `url(${require(`../../assets/images/home/${item.imgUrl}`)}`,
           }"
         >
           <!-- < img :src="item.imgUrl" alt="" class="home_page_banner_img" /> -->
@@ -24,104 +23,10 @@
             <p class="title-2">{{ item.title2 }}</p >
             <p class="title-3">{{ item.titleEn }}</p >
             <p>{{ item.desc }}</p >
-            <!-- <div class="tiyan_btn" @click="tiyan">申请体验</div> -->
             <experience v-model="isShowExperienceDialog"></experience>
           </div>
         </div>
-        <div v-if="showType === 'lightPoint'" class="lightPointArea">
-          <div class="left_light_point_box">
-            < img :src="item.imgUrl" alt="" />
-          </div>
-          <div class="right_desc">
-            <div class="light-right">
-              <p>{{ item.title }}</p >
-              <ul>
-                <div class="right_desc_item">
-                  < img :src="item.iconUrl1" alt="" />
-                  <span>{{ item.desc1 }}</span>
-                </div>
-                <div class="right_desc_item">
-                  < img :src="item.iconUrl2" alt="" />
-                  <span>{{ item.desc2 }}</span>
-                </div>
-                <div class="right_desc_item">
-                  < img :src="item.iconUrl3" alt="" />
-                  <span>{{ item.desc3 }}</span>
-                </div>
-                <div class="right_desc_item">
-                  < img :src="item.iconUrl4" alt="" />
-                  <span>{{ item.desc4 }}</span>
-                </div>
-                <div class="circle_yuan"></div>
-              </ul>
-            </div>
-          </div>
-          <!-- <div class="circle_yuan"></div> -->
-        </div>
-        <div v-if="showType === 'isSolution'" class="solutionArea">
-          <div class="left_desc_box">
-            <p class="left_text_title">{{ item.title }}</p >
-            <p class="left_text_content">
-              {{ item.desc }}
-            </p >
-            <div class="more_box" @click="goTo(item.path)">
-              < img src="../../assets/images/more.png" alt="" />
-              <span class="more_text">more</span>
-            </div>
-          </div>
-          <div class="right_img_box">
-            < img :src="item.imgUrl" alt="" />
-          </div>
-        </div>
-        <!-- </div> -->
-        <div v-if="isShowDescBox" class="img_desc">
-          <p class="img_desc_title">{{ item.imgDescTitle }}</p >
-          <p class="img_desc_content">{{ item.imgDescContent }}</p >
-        </div>
-        <div
-          v-if="showType === 'isOperationProcessBox'"
-          class="operation_process_box"
-        >
-          <section class="choose_type_box">
-            <div
-              class="choose_item"
-              v-for="(choooseItem, ind) in findBannerList"
-              :key="ind"
-              @click="active(ind)"
-            >
-              <span class="out_circle">
-                <span
-                  class="in_circle"
-                  :class="index === ind ? 'circle_active' : ''"
-                  >{{ ind + 1 }}</span
-                >
-              </span>
-              <p :class="index === ind ? 'text_active' : ''">
-                {{ choooseItem.chooseTypeName }}
-              </p >
-              <span class="line" v-show="findBannerList.length - ind > 1"
-                >--------------</span
-              >
-            </div>
-          </section>
-          <div class="pingtai_caozuo_liucheng_img_container">
-            <section class="img_container">
-              < img :src="item.imgUrl" alt="" />
-              <div class="product_service_img_desc">
-                <div class="img_text_desc">
-                  <span>
-                    <p class="title">{{ item.chooseTypeName }}</p >
-                    <p class="text">
-                      {{ item.imgDesc }}
-                    </p >
-                  </span>
-                </div>
-              </div>
-            </section>
-          </div>
-        </div>
       </li>
-      <!-- <slot></slot> -->
     </ul>
     <a
       @click="clickFn(-1)"
@@ -249,20 +154,8 @@ export default {
     showTextType(type) {
       return type === this.currentType;
     },
-    // 返回图片路径
-    imagePath(data) {
-      return require(`../../assets/images/${data}`);
-    },
-    // 解决方案点击跳转详情
-    goTo(path) {
-      window.open(window.location.origin + "/solution/?type=" + path, "_blank");
-    },
-    tiyan() {
-      // this.$router.push({
-      //   path: "/contact",
-      // });
-      this.isShowExperienceDialog = true;
-    },
+ 
+  
   },
   mounted() {
     this.autoplayFn();

@@ -130,6 +130,7 @@ export default {
       console.log("anchor===", anchor);
       if (anchor) {
         const element = document.getElementById(anchor);
+        console.log('element===pc', element)
         if (element) {
           element.scrollIntoView({ behavior: "smooth" });
         }
