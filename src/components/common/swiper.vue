@@ -13,7 +13,7 @@
           v-if="showType === 'homePageBanner'"
           class="home_page_banner_swiper_box"
           :style="{
-            'background-image': `url(${require(`../../assets/images/home/${item.imgUrl}`)}`,
+            'background-image': `url(${require(`../../assets/images/${item.imgUrl}`)}`,
           }"
         >
           <!-- < img :src="item.imgUrl" alt="" class="home_page_banner_img" /> -->
@@ -23,7 +23,7 @@
             <p class="title-2">{{ item.title2 }}</p >
             <p class="title-3">{{ item.titleEn }}</p >
             <p>{{ item.desc }}</p >
-            <experience v-model="isShowExperienceDialog"></experience>
+            <!-- <experience v-model="isShowExperienceDialog"></experience> -->
           </div>
         </div>
       </li>
@@ -56,12 +56,8 @@
 </template>
     
 <script>
-import experience from "@/components/experience/index.vue";
 export default {
   name: "Carousel",
-  components: {
-    experience,
-  },
   props: {
     findBannerList: {
       type: Array,
@@ -431,89 +427,6 @@ export default {
   bottom: 50px;
   /* right: 340px;
   bottom: 100px; */
-}
-.solutionArea {
-  width: 100%;
-  height: 538px;
-  display: flex;
-}
-.solutionArea .left_desc_box {
-  width: 421px;
-  height: 538px;
-  background-image: url("../../assets/images/jiejuefangan-text-bj.png");
-  background-repeat: no-repeat;
-  background-size: cover;
-  padding: 32px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-  padding: 0 56px;
-  position: relative;
-}
-.solutionArea .left_desc_box .left_text_title {
-  /* width: 287px; */
-  text-align: left;
-  height: 24px;
-  font-size: 24px;
-  font-family: Source Han Sans CN;
-  font-weight: 400;
-  color: #ffffff;
-  line-height: 24px;
-  /* opacity: 0.7; */
-}
-.solutionArea .left_desc_box .left_text_content {
-  /* width: 314px; */
-  height: 302px;
-  font-size: 14px;
-  font-family: Source Han Sans CN;
-  font-weight: 300;
-  color: #fefeff;
-  line-height: 24px;
-  opacity: 0.7;
-  margin-top: 30px;
-}
-.solutionArea .left_desc_box .title {
-  font-size: 24px;
-  font-family: SourceHanSansCN-Regular;
-  color: #fefeff;
-  opacity: 0.7;
-}
-.solutionArea .left_desc_box .content_text {
-  width: 314px;
-  line-height: 24px;
-  font-family: SourceHanSansCN-Regular;
-  color: #fefeff;
-  font-size: 14px;
-  opacity: 0.7;
-}
-.solutionArea .left_desc_box .more_box {
-  display: flex;
-  align-items: center;
-  height: 40px;
-  position: absolute;
-  bottom: 50px;
-  left: 60px;
-  cursor: pointer;
-}
-.solutionArea .left_desc_box .more_box img {
-  width: 40px;
-  height: 40px;
-}
-.solutionArea .left_desc_box .more_box .more_text {
-  font-size: 14px;
-  font-family: Source Han Sans CN;
-  font-weight: 300;
-  color: #196fe5;
-  margin-left: 9px;
-}
-.solutionArea .right_img_box {
-  width: 776px;
-  height: 538px;
-}
-.solutionArea .right_img_box img {
-  width: 776px;
-  height: 538px;
 }
 /* 产品服务-平台操作流程 */
 .operation_process_box {

@@ -1,38 +1,5 @@
 <template>
     <div class="mobile_contact_container">
-        <img class="mobile_contact_banner" src="../../../assets/images/mobile_contact.png" alt="">
-        <section class="mobile_contact_desc_box flex_center">
-            <p>联系我们</p>
-            <p>广州力控元海信息科技有限公司 成立于2014年3月，元海以广州为核心，下设武汉、长沙、厦门、三个办事处，全面负责华南、华中地区市场开拓与维护。</p>
-        </section>
-        <section class="mobile_contact_form_box">
-            <p class="mobile_contact_form_title">预约产品DEMO演示</p>
-            <p class="mobile_contact_form_desc">工作人员将于1个工作日内与您联系为您现场/远程演示产品基于您的需求提供数字孪生解决方案</p>
-            <div class="form_box">
-                <div class="form_item">
-                    <p class="form_item_title">姓名</p>
-                    <input class="form_item_input" type="text" placeholder="请输入姓名" v-model="form.name">
-                </div>
-                <div class="form_item">
-                    <p class="form_item_title">企业名称</p>
-                    <input class="form_item_input" type="text" placeholder="请输入企业名称" v-model="form.company">
-                </div>
-                <div class="form_item">
-                    <p class="form_item_title">手机号</p>
-                    <input class="form_item_input" type="text" placeholder="请输入手机号" v-model="form.phone">
-                </div>
-                <div class="form_item">
-                    <p class="form_item_title">验证码</p>
-                    <div class="code_btn_box">
-                        <input class="form_item_input" type="text" placeholder="请输入验证码" v-model="form.captcha">
-                        <div :class="!isShowTime ? 'code_btn' : 'code_time_text'" @click="getCodeBtn">{{ !isShowTime ?
-                            "获取验证码" : `${time}s后重新发送` }}</div>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <van-dialog v-model="isShowDialog" title="图形验证"></van-dialog>
-        <mobileVerifyCodeDialog v-model="isShowCodeImgDialog" :phone="form.phone" />
         
     </div>
 </template>
@@ -42,12 +9,8 @@ import Vue from 'vue';
 import { Toast } from 'vant';
 Vue.use(Toast);
 import { getBase64 } from '@/utils/index.js'
-import mobileVerifyCodeDialog from '@/components/mobile/tryUse/try-use.vue'
 export default {
     name: 'mobileContact',
-    components: {
-        mobileVerifyCodeDialog
-    },
     data() {
         this.myreg = /^[1][3,4,5,7,8][0-9]{9}$/;
         return {

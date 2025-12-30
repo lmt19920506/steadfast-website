@@ -12,25 +12,19 @@
   <script>
 import Header from "../components/common/header.vue";
 import Footer from "../components/common/footer.vue";
-import createProject from "../components/common/createProject.vue";
 import home from "@/views/home";
 import productService from "@/views/product-service";
 import productDescription from '@/views/product-description'
-import productFrameIntroduction from '@/views/product-description/product-frame-introduction.vue'
 import solution from '@/views/solution'
-import applicationCase from '@/views/application-case'
 import contact from '@/views/contact'
 export default {
   components: {
     Header,
     Footer,
-    createProject,
     home,
     productService,
     productDescription,
-    productFrameIntroduction,
     solution,
-    applicationCase,
     contact
   },
   data() {
@@ -62,14 +56,8 @@ export default {
         if (newVal === "/product-description") {
           this.currentComponent = "productDescription";
         }
-        if (newVal === '/product-description/product-frame-introduction') {
-            this.currentComponent = 'productFrameIntroduction'
-        }
         if (newVal === "/solution") {
           this.currentComponent = "solution";
-        }
-        if (newVal === "/application-case") {
-          this.currentComponent = "applicationCase";
         }
         if (newVal === "/contact") {
           this.currentComponent = "contact";

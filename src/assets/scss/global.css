@@ -97,7 +97,6 @@ li {
   width: 1334px;
   height: 808px;
   /* background: pink; */
-  background-image: url("../images/shouye-2@2x@2x.png");
   background-position: center center;
   background-repeat: no-repeat;
   /* 当内容高度大于图片高度时，背景图像的位置相对于viewport固定 */
@@ -147,7 +146,7 @@ li {
 .show_content_item_box .wangge {
   height: 413px;
   width: 1920px;
-  background-image: url("../images/wangge.png");
+  background-image: url("../images/store/wangge.png");
   background-repeat: no-repeat;
   background-size: cover;
   position: absolute;
@@ -170,7 +169,6 @@ li {
   display: inline-block;
   width: 6px;
   height: 10px;
-  background-image: url("../images/sanjiao.png");
   background-repeat: no-repeat;
   background-size: 100%;
   /* z-index: 9; */

@@ -37,32 +37,32 @@ export default {
     this.iconList = [
       {
         name: "Artificial Intelligence",
-        url: require("../../assets/images/product/ai.jpg"),
+        url: require("../../assets/images/ai.jpg"),
       },
-      { name: "new energy", url: require("../../assets/images/product/ne.jpg") },
+      { name: "new energy", url: require("../../assets/images/ne.jpg") },
       {
         name: "Industrial Electronics",
-        url: require("../../assets/images/product/ie.jpg"),
+        url: require("../../assets/images/ie.jpg"),
       },
       {
         name: "Automotive Electronics",
-        url: require("../../assets/images/product/ae.jpg"),
+        url: require("../../assets/images/ae.jpg"),
       },
       {
         name: "Communication Electronics",
-        url: require("../../assets/images/product/ce.jpg"),
+        url: require("../../assets/images/ce.jpg"),
       },
       {
         name: "Medical Electronics",
-        url: require("../../assets/images/product/me.jpg"),
+        url: require("../../assets/images/me.jpg"),
       },
       {
         name: "Consumer Electronics",
-        url: require("../../assets/images/product/ce2.jpg"),
+        url: require("../../assets/images/ce2.jpg"),
       },
       {
         name: "Internet of Things",
-        url: require("../../assets/images/product/it.jpg"),
+        url: require("../../assets/images/it.jpg"),
       },
     ];
     return {};

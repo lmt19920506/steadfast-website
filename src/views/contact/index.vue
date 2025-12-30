@@ -1,90 +1,6 @@
 <template>
   <div>
     <section class="contact_container pc_container">
-      <banner></banner>
-      <section class="contact_content_show">
-        <p class="contact_title">联系我们</p>
-        <p class="contact_desc">
-          广州力控元海信息科技有限公司，为国内工业软件产品开发商及数字化解决方案提供商，以产业互联网服务为核心，专注”制造业+互联网”领域
-          。力控元海以广州为核心，设立长沙分公司、武汉分公司和厦门分公司。
-        </p>
-      </section>
-      <section class="message_box">
-        <div class="left">
-          <p class="title1">预约产品DEMO演示</p>
-          <p class="title2">
-            工作人员将于1个工作日内与您联系为您现场/远程演示产品
-          </p>
-          <p class="title3">基于您的需求提供数字孪生解决方案</p>
-          <div class="form_box">
-            <el-form :model="form" label-position="top" :rules="rules">
-              <div class="row">
-                <el-form-item label="姓名">
-                  <input type="text" v-model="form.name" placeholder="请输入姓名" />
-                </el-form-item>
-                <el-form-item label="企业名称">
-                  <input type="text" v-model="form.company" placeholder="请输入企业名称" />
-                </el-form-item>
-              </div>
-              <div class="row2">
-                <el-form-item label="手机号">
-                  <input type="text" v-model="form.phone" placeholder="请输入手机号" />
-                </el-form-item>
-                <!-- <div class="code_input_box"> -->
-                <el-form-item label="验证码">
-                  <input class="phone_input" type="text" v-model="form.captcha" placeholder="请输入验证码" />
-                </el-form-item>
-                <!-- </div> -->
-                <el-form-item label=" ">
-                  <div :class="!isShowTime ? 'code_btn' : 'code_time_text'" @click="getCodeBtn">
-                    {{ !isShowTime ? "获取验证码" : `${time}s后重新发送` }}
-                  </div>
-                  <!-- <div class="show_captcha_code_text" v-else>{{ time }}</div> -->
-                </el-form-item>
-              </div>
-            </el-form>
-          </div>
-          <p class="agree_text">
-            <span class="normal_text">提交即代表同意</span><span class="click_text"
-              @click="isShowDialog = true">《用户服务协议》</span><span class="normal_text">及</span><span class="click_text"
-              @click="isShowDialog = true">《力控元海用户隐私政策》</span>
-          </p>
-          <div class="send_btn" @click="send">完成</div>
-        </div>
-        <div class="right">
-          <p class="company_name">广州力控元海信息科技有限公司</p>
-          <section class="content_box">
-            <div class="text_item">
-              <img src="../../assets/images/dizhi.png" />
-              <span>广东省广州市天河区建中路59号101房</span>
-            </div>
-            <div class="text_item">
-              <span class="no_icon_text">&nbsp; 厦门市思明区龙山南路109号怀特众创601室</span>
-            </div>
-            <div class="text_item">
-              <span class="no_icon_text">&nbsp; 长沙市岳麓区海凭医疗器械产业园区1栋B座16楼</span>
-            </div>
-            <div class="text_item">
-              <span class="no_icon_text">&nbsp; 武汉市东湖高新区高新大道438号宜科中心2号楼1009室</span>
-            </div>
-            <div class="text_item">
-              <img src="../../assets/images/dianhua.png" alt="" />
-              <span class="phone1">400-859-8181</span>
-              <span class="phone2">020-83981520</span>
-            </div>
-            <div class="text_item">
-              <img src="../../assets/images/youx.png" alt="" />
-              <span>gzmarket@sunwayland.com.cn</span>
-            </div>
-            <div class="text_item">
-              <img src="../../assets/images/wangzhi.png" alt="" />
-              <span>www.sforcecon.com</span>
-            </div>
-          </section>
-        </div>
-      </section>
-      <vefifyCodeDialog v-model="isShowCodeImgDialog" :phone="form.phone"></vefifyCodeDialog>
-      <messageModal v-model="isShowDialog"></messageModal>
     </section>
     <section class="mobile_container">
       <mobileContact />
@@ -93,17 +9,11 @@
 </template>
 
 <script>
-import banner from "@/components/contact/banner.vue";
-import vefifyCodeDialog from "@/components/common/verifyCodeDialog.vue";
-import messageModal from '@/components/contact/warnMessage.vue'
 import mobileContact from '@/components/mobile/contact/mobile-contact.vue'
 // import { addContactUs, getCode } from "@/apis/contact.js";
 import { getBase64 } from "@/utils/index.js";
 export default {
   components: {
-    banner,
-    vefifyCodeDialog,
-    messageModal,
     mobileContact
   },
   head() {

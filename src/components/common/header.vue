@@ -245,7 +245,6 @@ export default {
       { name: "Products", path: "/product-service", value: "" },
       { name: "Category", path: "/product-description", value: "" },
       { name: "Services", path: "/solution", value: "" },
-      // { name: "应用案例", path: "/application-case", value: "" },
       { name: "Contact Us", path: "/contact", value: "" },
     ];
     this.rules = {
@@ -322,9 +321,6 @@ export default {
         }
         if (newVal.indexOf("product-service") > -1) {
           this.currentPath = "/product-service";
-        }
-        if (newVal.indexOf("application-case") > -1) {
-          this.currentPath = "/application-case";
         }
         if (newVal.indexOf("contact") > -1) {
           this.currentPath = "/contact";

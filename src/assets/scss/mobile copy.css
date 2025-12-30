@@ -36,7 +36,6 @@
     width: 720px;
     height: 435px;
     /* background: pink; */
-    background-image: url('../images/shouye-2@2x@2x.png');
     background-position: center center;
     background-repeat: no-repeat;
     /* 当内容高度大于图片高度时，背景图像的位置相对于viewport固定 */

@@ -5,7 +5,7 @@
         <van-swipe-item>
           <div class="mobile_home_banner_img_box">
             <img
-              src="../../../assets/images/mobile/mobile-home-banner-1.jpg"
+             home src="../../../assets/images/mobile/mobile-home-banner-1.jpg"
               alt=""
             />
             <div class="text-box">
@@ -38,21 +38,16 @@
          <p class="title2">With SteadFast, a trusted electronic component supplier, rely on a rigorous CSD quality management system, seamless global sourcing from over 7,000 trusted suppliers, and top-tier after-sales support to meet your needs efficiently and reliably.</p>
          <p class="desc">We have worked with 3000+ clients globally</p>
     </section>
-    <!-- <mobileExperience v-model="isShow" /> -->
   </div>
 </template>
 
 <script>
-import mobileExperience from "../experience/mobile-experience.vue";
 export default {
   props: {
     lightPointArr: {
       type: Array,
       default: () => [],
     },
-  },
-  components: {
-    mobileExperience,
   },
   data() {
     return {
@@ -131,7 +126,7 @@ fadeInDown animation {
 .trust-box {
   width: 1920px;
   height: 3732px;
-  background-image: url("../../../assets/images/home/hero-img.jpg");
+  background-image: url("../../../assets/images/hero-img.jpg");
   background-size: cover;
   background-position: cener center;
   background-repeat: no-repeat;

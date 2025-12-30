@@ -52,13 +52,6 @@ export default {
     mobileHome,
   },
   data() {
-    this.swiperList = [
-      { name: "one", img: require("../../assets/images/pingtailiangdian.png") },
-      {
-        name: "two",
-        img: require("../../assets/images/shouye-pingtailiangdian-3.png"),
-      },
-    ];
     this.homeBannerArr = [
       {
         name: "one",
@@ -92,23 +85,23 @@ export default {
     this.iconList = [
       {
         id: 1,
-        imgUrl: require("../../assets/images/home/ics-1.png"),
+        imgUrl: require("../../assets/images/ics-1.png"),
       },
       {
         id: 2,
-        imgUrl: require("../../assets/images/home/ics-2.png"),
+        imgUrl: require("../../assets/images/ics-2.png"),
       },
       {
         id: 3,
-        imgUrl: require("../../assets/images/home/ics-3.png"),
+        imgUrl: require("../../assets/images/ics-3.png"),
       },
       {
         id: 4,
-        imgUrl: require("../../assets/images/home/ics-4.png"),
+        imgUrl: require("../../assets/images/ics-4.png"),
       },
       {
         id: 5,
-        imgUrl: require("../../assets/images/home/ics-5.png"),
+        imgUrl: require("../../assets/images/ics-5.png"),
       },
     ];
     return {};
@@ -141,7 +134,7 @@ export default {
 .trust-box {
   width: 100%;
   height: 760px;
-  background-image: url("../../assets/images/home/hero-img.jpg");
+  background-image: url("../../assets/images/hero-img.jpg");
   background-size: cover;
   background-position: center center;
   background-repeat: no-repeat;
