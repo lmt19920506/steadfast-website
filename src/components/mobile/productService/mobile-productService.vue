@@ -45,32 +45,32 @@ export default {
     this.iconList = [
       {
         name: "Artificial Intelligence",
-        url: require("../../../assets/images/ai.jpg"),
+        url: require("../../../assets/images/product/ai.jpg"),
       },
-      { name: "new energy", url: require("../../../assets/images/ne.jpg") },
+      { name: "new energy", url: require("../../../assets/images/product/ne.jpg") },
       {
         name: "Industrial Electronics",
-        url: require("../../../assets/images/ie.jpg"),
+        url: require("../../../assets/images/product/ie.jpg"),
       },
       {
         name: "Automotive Electronics",
-        url: require("../../../assets/images/ae.jpg"),
+        url: require("../../../assets/images/product/ae.jpg"),
       },
       {
         name: "Communication Electronics",
-        url: require("../../../assets/images/ce.jpg"),
+        url: require("../../../assets/images/product/ce.jpg"),
       },
       {
         name: "Medical Electronics",
-        url: require("../../../assets/images/me.jpg"),
+        url: require("../../../assets/images/product/me.jpg"),
       },
       {
         name: "Consumer Electronics",
-        url: require("../../../assets/images/ce2.jpg"),
+        url: require("../../../assets/images/product/ce2.jpg"),
       },
       {
         name: "Internet of Things",
-        url: require("../../../assets/images/it.jpg"),
+        url: require("../../../assets/images/product/it.jpg"),
       },
     ];
     return {
@@ -93,7 +93,7 @@ export default {
 .mobile_product_server_banner {
   width: 1920px;
   height: 1708.8px;
-  background-image: url("../../../assets/images/chanpinfuwu-banner@2x.webp");
+  background-image: url("../../../assets/images/product/product-server-banner.webp");
   background-repeat: no-repeat;
   background-size: cover;
   //   padding-top: 325.74px;

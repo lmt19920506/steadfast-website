@@ -12,7 +12,7 @@ export default {};
 .product_service_container {
   width: 1920px;
   height: 960px;
-  background-image: url("../../assets/images/chanpinfuwu-banner@2x.webp");
+  background-image: url("../../assets/images/product/product-server-banner.webp");
   background-repeat: no-repeat;
   background-size: 100% 100%;
   /* padding-top: 211px;

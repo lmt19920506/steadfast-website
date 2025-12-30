@@ -203,6 +203,7 @@
           alt=""
           @click="goHome"
         />
+        <p>SteadFast</p>
         <img
           v-if="!isShowMobileMenu"
           src="@/assets/images/mobile/mobile_caidan.png"
@@ -242,10 +243,10 @@ export default {
     this.menuList = [
       { name: "About Us", path: "/", value: "" },
       { name: "Products", path: "/product-service", value: "" },
-      { name: "产品说明", path: "/product-description", value: "" },
+      { name: "Category", path: "/product-description", value: "" },
       { name: "Services", path: "/solution", value: "" },
-      { name: "应用案例", path: "/application-case", value: "" },
-      { name: "联系我们", path: "/contact", value: "" },
+      // { name: "应用案例", path: "/application-case", value: "" },
+      { name: "Contact Us", path: "/contact", value: "" },
     ];
     this.rules = {
       name: [
@@ -746,8 +747,8 @@ export default {
   border-top: 2.67px solid #353941;
 }
 .mobile_logo_img {
-  width: 817.02px;
-  height: 101.46px;
+  width: 230px;
+  height: 230px;
 }
 </style>
 

@@ -88,37 +88,37 @@ export default {
         title: "ST-KHP20S78",
         desc:
           "ST-KHP20S78 IP/HDMI output, 20x optical zoom + three-axis stabilized starlight night vision gimbal.",
-        imgUrl: require("../../assets/images/product/camera-1.png"),
+        imgUrl: require("../../assets/images/category/camera-1.png"),
       },
       {
         title: "ST-KHP4KS585",
         desc:
           "ST-KHP4KS585 is a drone gimbal camera that integrates a 4x optical zoom visible light camera and a high-precision three-axis stabilized gimbal. Adopt network IP and HDMI dual output.",
-        imgUrl: require("../../assets/images/product/camera-2.png"),
+        imgUrl: require("../../assets/images/category/camera-2.png"),
       },
       {
         title: "ST-KIY10S4K",
         desc:
           "ST-KIY10S4K is an integrated 4K resolution 90x hybrid zoom camera and a high-precision 3-axis stabilized gimbal camera. Support Network IP output.",
-        imgUrl: require("../../assets/images/product/camera-3.png"),
+        imgUrl: require("../../assets/images/category/camera-3.png"),
       },
       {
         title: "ST-KIP30S90",
         desc:
           "ST-KIP30S90 is an integrated 30x optical zoom, 3-axis stabilized gimbal, IP output, and RTSP stream of ground receiver.",
-        imgUrl: require("../../assets/images/product/camera-4.png"),
+        imgUrl: require("../../assets/images/category/camera-4.png"),
       },
       {
         title: "ST-KHY10S90",
         desc:
           "ST-KHY10S90 10x optical zoom , IRCUT 3-axis gimbal camera with IP/HDMI output. Weight: 396 grams",
-        imgUrl: require("../../assets/images/product/camera-5.png"),
+        imgUrl: require("../../assets/images/category/camera-5.png"),
       },
       {
         title: "ST-KIY10S35",
         desc:
           "ST-KIY10S35 is a drone gimbal that integrates a 90x hybrid zoom camera and a high-precision three-axis stabilized gimbal. Support Network IP output. Weight: 360 grams",
-        imgUrl: require("../../assets/images/product/camera-6.png"),
+        imgUrl: require("../../assets/images/category/camera-6.png"),
       },
     ];
     return {};

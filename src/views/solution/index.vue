@@ -42,7 +42,7 @@
               <p class="active-left-desc">Our comprehensive suite of active components can be customized to suit the unique challenges faced by your industry.</p>
             </div>
             <div class="active-right">
-              <img src="../../assets/images/active-component.jpeg" alt="">
+              <img src="../../assets/images/service/active-component.jpeg" alt="">
             </div>
           </div>
         </div>
@@ -65,37 +65,37 @@ export default {
     this.contentList = [
       {
         text: "Shortage",
-        imgUrl: require("../../assets/images/shortage.png"),
+        imgUrl: require("../../assets/images/service/shortage.png"),
         desc:
           "We have access to 7000+ suppliers enabling us to fulfill all your electronic component requirements including scarce parts.",
       },
       {
         text: "Turn-key Procurement",
-        imgUrl: require("../../assets/images/turnkey.png"),
+        imgUrl: require("../../assets/images/service/turnkey.png"),
         desc:
           "Our expert team can provide quotations for your BOM (Bill of Materials) within 2 hours.",
       },
       {
         text: "Cost Savings",
-        imgUrl: require("../../assets/images/costsaves.png"),
+        imgUrl: require("../../assets/images/service/costsaves.png"),
         desc:
           "Our 30+ global sourcing experts are able to provide the best possible solutions for your requirements efficiently and cost-effectively.",
       },
       {
         text: "Obsolescence",
-        imgUrl: require("../../assets/images/obsolescence.png"),
+        imgUrl: require("../../assets/images/service/obsolescence.png"),
         desc:
           "We leverage our vast sourcing channels and reliable engineering support to proactively address the challenge.",
       },
       {
         text: "Franchised Products & Design Support",
-        imgUrl: require("../../assets/images/franchised.png"),
+        imgUrl: require("../../assets/images/service/franchised.png"),
         desc:
           "Our team will look into the franchise supply network and offer alternative solutions.",
       },
       {
         text: "Excess Management",
-        imgUrl: require("../../assets/images/excess.png"),
+        imgUrl: require("../../assets/images/service/excess.png"),
         desc:
           "In case of excess inventory, we can support you resell to our 3000+ customer base.",
       },
@@ -103,49 +103,49 @@ export default {
     this.serviceList = [
       {
         text: "IoT Intelligence",
-        imgUrl: require("../../assets/images/iot.png"),
+        imgUrl: require("../../assets/images/service/iot.png"),
         desc:
           "Our expertise in sourcing and distributing components enables us to provide components that support the rapid growth and innovation in IoT.",
       },
       {
         text: "Electric Power",
-        imgUrl: require("../../assets/images/electric-power.jpg"),
+        imgUrl: require("../../assets/images/service/electric-power.jpg"),
         desc:
           "Whether you're looking for advanced electronic components for power generation, transmission, or distribution, our expert team will assist you with your procurement.",
       },
       {
         text: "Automotive Electronics",
-        imgUrl: require("../../assets/images/automotive.jpg"),
+        imgUrl: require("../../assets/images/service/automotive.jpg"),
         desc:
           "We provide a comprehensive range of reliable, top-tier automotive electronics components that power and control various systems in a vehicle.",
       },
       {
         text: "Medical Electronics",
-        imgUrl: require("../../assets/images/medical-electronics.jpg"),
+        imgUrl: require("../../assets/images/service/medical-electronics.jpg"),
         desc:
           "We understand the critical nature of the medical industry. All our electronic components for medical devices comply with industry-specific standards including FDA regulations.",
       },
       {
         text: "Computing & Storage",
-        imgUrl: require("../../assets/images/computing.jpg"),
+        imgUrl: require("../../assets/images/service/computing.jpg"),
         desc:
           "We provide components to support the development and maintenance of servers, data centers, and cloud storage infrastructure.",
       },
       {
         text: "Industrial Control",
-        imgUrl: require("../../assets/images/industrial-control.png"),
+        imgUrl: require("../../assets/images/service/industrial-control.png"),
         desc:
           "We have a wide range of electronic components that help you in automation, process optimization, safety, communication, energy efficiency, and scalability of the ICS.",
       },
       {
         text: "Communication Network/5G",
-        imgUrl: require("../../assets/images/communication.png"),
+        imgUrl: require("../../assets/images/service/communication.png"),
         desc:
           "We provide suitable electronic parts that will enable high-speed data transmission and improved connectivity for your communication network / 5G innovations.",
       },
       {
         text: "New Energy",
-        imgUrl: require("../../assets/images/new-energy.jpg"),
+        imgUrl: require("../../assets/images/service/new-energy.jpg"),
         desc:
           "We select and deliver electronic parts that increase the efficiency of energy conversion, management, and distribution for your new energy projects.",
       },
@@ -176,7 +176,7 @@ export default {
 .solution_banner_box {
   width: 100%;
   height: 520px;
-  background-image: url("../../assets/images/services_img22.jpg");
+  background-image: url("../../assets/images/service/service_banner.jpg");
   background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;

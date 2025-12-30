@@ -64,7 +64,7 @@
       </div>
     </section>
     <section class="active-component-box">
-      <img src="../../../assets/images/active-component.jpeg" alt="" />
+      <img src="../../../assets/images/service/active-component.jpeg" alt="" />
       <p class="show-title">Active Components</p>
       <p class="show-desc">Our comprehensive suite of active components can be customized to suit the unique challenges faced by your industry.</p>
     </section>
@@ -119,7 +119,7 @@ export default {
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    background: url("../../../assets/images/services_img22.jpg");
+    background: url("../../../assets/images/service/service_banner.jpg");
     background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;
